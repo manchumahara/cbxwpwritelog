@@ -1,10 +1,10 @@
 === CBX WP Write Log ===
 Contributors: codeboxr,manchumahara
 Donate link: https://codeboxr.com
-Tags: log, debug
+Tags: log, debug, email, mail
 Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 1.0.0
+Tested up to: 4.9.6
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ A simple dev plugin that helps to write something to debug log file
 
 == Description ==
 
-A simple dev plugin that helps to write something to wordpress debug file using a simple function
+This plugin adds a helper function to write log in wordpress debug file. This plugin also writes email send fail logs
 
 Usages:
 
@@ -32,8 +32,9 @@ This section describes how to install the plugin and get it working.
 e.g.
 
 1. Upload `cbxwpwritelog` folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. call function `<?php write_log('your content, variable or object here'); ?>` in your templates or plugin anywhere where you need to
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. call function `<?php write_log('your content, variable or object here'); ?>` in your templates or plugin anywhere where you need to
+4. There are other ways to install a plugin please check WordPress Codex https://codex.wordpress.org/Managing_Plugins
 
 == Frequently Asked Questions ==
 
@@ -45,5 +46,5 @@ e.g.
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.1 =
 * Initial version released
