@@ -4,7 +4,7 @@ This plugin adds a helper function to write log in wordpress debug file. This pl
 Usages:
 
 ```php
-if ( ! function_exists( 'write_log' ) ) {
+if (function_exists( 'write_log' ) ) {
 	write_log('testing a variable output');
 	write_log($name);
 }
