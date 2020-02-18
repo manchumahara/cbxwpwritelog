@@ -10,7 +10,7 @@
 	 * Plugin Name:       CBX WP Write Log
 	 * Plugin URI:        https://github.com/manchumahara/cbxwpwritelog
 	 * Description:       This plugin adds a helper function to write log in wordpress debug file. This plugin also writes email send fail logs
-	 * Version:           1.0.2
+	 * Version:           1.0.3
 	 * Author:            Codeboxr
 	 * Author URI:        https://codeboxr.com
 	 * License:           GPL-2.0+
@@ -26,7 +26,7 @@
 
 
 	defined( 'CBXWPWRITELOG_PLUGIN_NAME' ) or define( 'CBXWPWRITELOG_PLUGIN_NAME', 'cbxwpwritelog' );
-	defined( 'CBXWPWRITELOG_PLUGIN_VERSION' ) or define( 'CBXWPWRITELOG_PLUGIN_VERSION', '1.0.2' );
+	defined( 'CBXWPWRITELOG_PLUGIN_VERSION' ) or define( 'CBXWPWRITELOG_PLUGIN_VERSION', '1.0.3' );
 	defined( 'CBXWPWRITELOG_BASE_NAME' ) or define( 'CBXWPWRITELOG_BASE_NAME', plugin_basename( __FILE__ ) );
 	defined( 'CBXWPWRITELOG_ROOT_PATH' ) or define( 'CBXWPWRITELOG_ROOT_PATH', plugin_dir_path( __FILE__ ) );
 	defined( 'CBXWPWRITELOG_ROOT_URL' ) or define( 'CBXWPWRITELOG_ROOT_URL', plugin_dir_url( __FILE__ ) );
@@ -47,7 +47,11 @@
 			if ( true === WP_DEBUG ) {
 				if ( is_array( $log ) || is_object( $log ) ) {
 					error_log( print_r( $log, true ) );
-				} else {
+				}
+				else if(is_bool($log)) {
+					error_log( ($log == true)? 'true': 'false' );
+				}
+				else {
 					error_log( $log );
 				}
 			}

@@ -1,10 +1,9 @@
 === CBX WP Write Log ===
 Contributors: codeboxr,manchumahara
-Donate link: https://codeboxr.com
-Tags: log, debug, email, mail
+Tags: log,debug,email,mail
 Requires at least: 3.0.1
-Tested up to: 4.9.6
-Stable tag: 1.0.2
+Tested up to: 5.3.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +61,9 @@ define('CBXWPWRITELOG_EMAIL_SENT', false); //set true to enable email success de
 
 
 == Changelog ==
+= 1.0.3 =
+* Debug boolean in better way
+
 = 1.0.2 =
 * Email sent or fail debug
 
