@@ -43,6 +43,8 @@ define('CBXWPWRITELOG_EMAIL_SENT', false); //set true to enable email success de
 ![screenshot](https://raw.githubusercontent.com/manchumahara/cbxwpwritelog/master/assets/screenshot-1.jpg)
 
 # Changelog
+= 1.0.4 =
+* View error log http://your_domain/?cbxwpwritelog=1
 
 = 1.0.3 =
 * Debug boolean in better way

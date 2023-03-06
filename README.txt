@@ -2,8 +2,8 @@
 Contributors: codeboxr,manchumahara
 Tags: log,debug,email,mail
 Requires at least: 3.0.1
-Tested up to: 5.3.2
-Stable tag: 1.0.3
+Tested up to: 6.1.1
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ define('CBXWPWRITELOG_EMAIL_SENT', false); //set true to enable email success de
 
 
 == Changelog ==
+= 1.0.4 =
+* View error log http://your_domain/?cbxwpwritelog=1
+
 = 1.0.3 =
 * Debug boolean in better way
 
