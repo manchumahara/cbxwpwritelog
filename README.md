@@ -3,12 +3,16 @@ This plugin adds a helper function to write log in wordpress debug file. This pl
 
 Usages:
 
+01. Write log
 ```php
 if (function_exists( 'write_log' ) ) {
 	write_log('testing a variable output');
 	write_log($name);
 }
 ```
+02. View Log
+[http://your_domain/?](http://your_domain/?cbxwpwritelog=1)
+
 
 For any query [contact us](https://codeboxr.com/contact-us/)
 
