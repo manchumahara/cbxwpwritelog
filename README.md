@@ -11,7 +11,7 @@ if (function_exists( 'write_log' ) ) {
 }
 ```
 02. View Log
-[http://your_domain/?](http://your_domain/?cbxwpwritelog=1)
+[http://your_domain/?cbxwpwritelog=1](http://your_domain/?cbxwpwritelog=1)
 
 
 For any query [contact us](https://codeboxr.com/contact-us/)
